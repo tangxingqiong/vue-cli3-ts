@@ -1,0 +1,26 @@
+//设置滚动条样式
+.scroll(@color: lighten(@primary, 50%)){
+    @scroll-width: 7px;
+    overflow-y: auto;
+    &::-webkit-scrollbar{
+        width: @scroll-width;
+        height: @scroll-width;
+    }
+    &::-webkit-scrollbar-thumb{
+        background: @color;
+        border-radius: @scroll-width;
+    }
+    &::-webkit-scrollbar-track{
+        background: lighten(@color, 50%);
+        border-radius: @scroll-width;
+    }
+}
+
+//绝对定位
+.absolute(@top: 0, @right: 0, @bottom: 0, @left: 0){
+    position: absolute;
+    top: @top;
+    right: @right;
+    bottom: @bottom;
+    left: @left;
+}

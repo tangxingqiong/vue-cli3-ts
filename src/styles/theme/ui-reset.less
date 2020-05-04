@@ -1,0 +1,38 @@
+//重置iview-style
+.no-border{
+    /deep/.ivu-select-selection,/deep/.ivu-input{
+        border: 0;
+        border-radius: 0;
+    }
+}
+//三级菜单
+.threechild{
+    width: 100%;
+    padding: 0 18px !important;
+    .ivu-menu-submenu-title-icon{
+        position: absolute;
+        right: 0;
+        top: 10px;
+    }
+    .ivu-menu-submenu-title{
+        color: #515a6e;
+        text-align: left;
+        // height: 35px !important;
+        // line-height: 35px !important;
+        // background: yellow;
+        .ivu-icon{
+            margin-right: 6px !important;
+        }
+    }
+    .ivu-select-dropdown{
+        position: initial !important;
+        box-shadow: none;
+        margin: 0;
+        // background: rebeccapurple;
+        // margin-top: -20px;
+        min-width: 100% !important;
+    }
+}
+.ivu-poptip-confirm .ivu-poptip-body .ivu-icon{
+    left: 15px;
+}

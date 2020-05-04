@@ -1,0 +1,40 @@
+.ivu-shrinkable-menu{
+    height: 100%;
+    width: 150px;
+    background: #8c90b5;
+    overflow-y: auto;
+    &::-webkit-scrollbar{
+        width: 0px;
+        background: rgba(0,0,0,0);
+    }
+    /* IE10,IE11,IE12 */
+    // .scroll_content{
+        -ms-scroll-chaining: chained;
+        -ms-overflow-style: none;
+        -ms-content-zooming: zoom;
+        -ms-scroll-rails: none;
+        -ms-content-zoom-limit-min: 100%;
+        -ms-content-zoom-limit-max: 100%;
+        -ms-scroll-snap-type: proximity;
+        -ms-scroll-snap-points-x: snapList(100%, 200%, 300%, 400%, 500%);
+        -ms-overflow-style: none;
+        // overflow: auto;
+    // }
+    
+    .layout-text, .ivu-icon{
+        color: #fff !important;
+    }
+    .ivu-icon{
+        font-size: 20px;
+        vertical-align: text-bottom;
+    }
+}
+.ivu-menu-dark{
+    background-color: #8c90b5 !important;
+}
+.ivu-menu-item-selected, .ivu-menu-item.ivu-menu-item-selected:hover {
+    background: @highlightColor !important;
+}
+.ivu-menu-item:hover, .ivu-menu-submenu-title:hover{
+    background: #777b9a !important;
+}

@@ -1,0 +1,187 @@
+@import './base.less';
+
+.clearFix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.clearFix {
+    *height: 1%;
+}
+
+//行布局
+.flex-row{
+    display: flex;
+    align-items: flex-start;
+}
+//列布局
+.flex-view{
+    display: flex;
+    flex-direction: column;
+}
+.flex-item{
+    flex: 1;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.hide {
+    display: none
+}
+.link{
+    cursor: pointer;
+    color: @primary
+}
+
+.txt-over-ell-one {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.txt-over-ell-two {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.txt-over-ell-three {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tips-f70{
+    color: #ff7700;
+}
+
+.w500{
+    width: 500px;
+}
+.w210{
+    width: 210px;
+}
+.w150{
+    width: 170px;
+}
+.inlineblock{
+    display: inline-block;
+}
+.margin-top-20{
+    margin-top: 20px;
+}
+.margin-bottom-15{
+    margin-bottom: 15px;
+}
+.margin-bottom-20{
+    margin-bottom: 20px;
+}
+.margin-left-10{
+    margin-left: 10px;
+}
+.margin-left-20{
+    margin-left: 20px;
+}
+.margin-right-5{
+    margin-right: 5px;
+}
+.margin-right-10{
+    margin-right: 10px;
+}
+.margin-right-15{
+    margin-right: 15px;
+}
+.margin-right-20{
+    margin-right: 20px;
+}
+
+.padding-left-5{
+    padding-left: 5px;
+}
+.padding_10_0{
+    padding: 10px 0;
+}
+
+.text-align-r{
+    text-align: right;
+}
+.text-align-c{
+    text-align: center;
+}
+
+/* 可以设置不同的进入和离开动画 */
+/* 设置持续时间和动画函数 */
+.slide-fade-enter-active {
+    transition: all .3s ease;
+}
+.slide-fade-leave-active {
+    // transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+    transition: all .3s ease;
+}
+.slide-fade-enter, .slide-fade-leave-to
+    /* .slide-fade-leave-active for below version 2.1.8 */ {
+    transform: translateY(10px);
+    opacity: 0;
+}
+
+.component-fade-enter-active, .component-fade-leave-active {
+    transition: opacity .3s ease;
+  }
+.component-fade-enter, .component-fade-leave-to
+/* .component-fade-leave-active for below version 2.1.8 */ {
+opacity: 0;
+}
+
+
+.demo-spin-icon-load {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 1;
+    -webkit-animation: ani-demo-spin 1s linear infinite;
+    animation: ani-demo-spin 1s linear infinite
+}
+@-webkit-keyframes ani-demo-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg)
+    }
+
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+@keyframes ani-demo-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg)
+    }
+
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}

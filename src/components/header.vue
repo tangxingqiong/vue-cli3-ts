@@ -1,6 +1,6 @@
 <template>
     <div class="page-header">
-        <router-link :to="{ name: 'index'}"><div class="logo fl">点点赞后台管理系统</div></router-link>
+        <router-link :to="{ name: 'index'}"><div class="logo fl">后台管理系统</div></router-link>
         <div class="user fr">
             <Avatar size="small" src="https://i.loli.net/2017/08/21/599a521472424.jpg" />
             <span class="margin-left-10 margin-right-10">系统管理员</span>

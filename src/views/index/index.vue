@@ -6,7 +6,6 @@
                 <Col span="8">
                     <div class="font36">235</div>
                     <div class="text">任务审查</div>
-                    <DatePicker v-model="searchDateTime" type="datetimerange" placeholder="Select date and time" style="width: 300px"></DatePicker>
                 </Col>
                 <Col span="8">
                     <div class="font36">235</div>
@@ -51,8 +50,8 @@
     </div>
 </template>
 
-<script>
-import {formatNum} from '@/libs/utils.js'
+<script lang="ts">
+import {formatNum} from '@/libs/utils.ts'
 export default {
     name: 'index',
     data() {
@@ -131,11 +130,10 @@ export default {
                     num: '200',
                 }
             ],
-            searchDateTime: [],
         }
     },
     methods: {
-        _formatNum (num) {
+        _formatNum (num?:any) {
             return formatNum(num)
         },
         download(){
@@ -151,7 +149,8 @@ export default {
         },
     },
     created () {
-        
+        let name:any = '66'
+        name = 999
     },
 }
 </script>
